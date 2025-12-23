@@ -1,0 +1,50 @@
+import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { ShieldCheck, Activity, CreditCard } from "lucide-react";
+
+export default function CredRailMVP() { return ( <div className="min-h-screen bg-slate-950 text-slate-100 p-8"> <header className="mb-10"> <h1 className="text-4xl font-bold">CredRail Dashboard (MVP)</h1> <p className="text-slate-400 mt-2 max-w-xl"> Sandbox view showing how fintechs interact with CredRail APIs to assess trust, income, and credit risk. </p> </header>
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <Card className="bg-slate-900 border-slate-800">
+      <CardContent className="p-6">
+        <ShieldCheck className="w-8 h-8 mb-4 text-green-500" />
+        <h3 className="text-xl font-semibold">KYC Status</h3>
+        <p className="text-slate-400">Verified</p>
+        <p className="mt-4 text-3xl font-bold">82%</p>
+        <p className="text-sm text-slate-500">Trust Score</p>
+      </CardContent>
+    </Card>
+
+    <Card className="bg-slate-900 border-slate-800">
+      <CardContent className="p-6">
+        <Activity className="w-8 h-8 mb-4 text-blue-500" />
+        <h3 className="text-xl font-semibold">Income Signals</h3>
+        <p className="text-slate-400">Avg Monthly Income</p>
+        <p className="mt-4 text-3xl font-bold">KES 65,000</p>
+        <p className="text-sm text-slate-500">Cashflow: Stable</p>
+      </CardContent>
+    </Card>
+
+    <Card className="bg-slate-900 border-slate-800">
+      <CardContent className="p-6">
+        <CreditCard className="w-8 h-8 mb-4 text-purple-500" />
+        <h3 className="text-xl font-semibold">Credit Readiness</h3>
+        <p className="text-slate-400">Risk Level</p>
+        <p className="mt-4 text-3xl font-bold">Low</p>
+        <p className="text-sm text-slate-500">Recommended Limit: KES 20,000</p>
+      </CardContent>
+    </Card>
+  </div>
+
+  <div className="mt-12">
+    <Card className="bg-slate-900 border-slate-800">
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold mb-4">Simulated API Request</h2>
+        <pre className="bg-slate-950 p-4 rounded-lg text-sm overflow-x-auto text-slate-300">
+
+{POST /v1/score-user { "user_reference": "fintech_user_123", "consent_id": "consent_001", "identity": { "national_id": "12345678", "phone": "2547XXXXXXX" } }} </pre> <Button className="mt-6">Run Demo Check</Button> </CardContent> </Card> </div>
+
+<footer className="mt-16 text-sm text-slate-500">
+    CredRail MVP • Infrastructure fintech demo • No real user data
+  </footer>
+</div>
+
+); }
