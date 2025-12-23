@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CredRail | Fintech Infrastructure for Africa</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e5e7eb; }
+    header { padding: 60px 10%; background: linear-gradient(135deg, #020617, #020617); }
+    h1 { font-size: 3rem; margin-bottom: 10px; }
+    p { max-width: 600px; line-height: 1.6; }
+    .cta { margin-top: 30px; }
+    .btn { background: #2563eb; color: white; padding: 14px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; }
+    section { padding: 60px 10%; background: #020617; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .card { background: #020617; border: 1px solid #1e293b; padding: 24px; border-radius: 12px; }
+    footer { padding: 40px 10%; background: #020617; border-top: 1px solid #1e293b; }
+    input, button { padding: 12px; width: 100%; margin-top: 10px; border-radius: 6px; border: none; }
+    input { background: #020617; border: 1px solid #334155; color: white; }
+    button { background: #2563eb; color: white; font-weight: bold; cursor: pointer; }
+  </style>
+</head>
+<body><header>
+  <h1>CredRail</h1>
+  <p>The infrastructure layer powering trust, credit, and compliance for African fintechs. One API to verify users, understand income, and assess risk — instantly.</p>
+  <div class="cta">
+    <a class="btn" href="#signup">Request API Access</a>
+  </div>
+</header><section>
+  <h2>What CredRail Does</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>KYC & Trust Scoring</h3>
+      <p>Verify identity consistency using telco signals and ID checks — without storing personal documents.</p>
+    </div>
+    <div class="card">
+      <h3>Income & Cashflow Signals</h3>
+      <p>Normalize M-Pesa and bank data into clean income and stability metrics.</p>
+    </div>
+    <div class="card">
+      <h3>Credit Readiness</h3>
+      <p>Behavior-based scoring to help fintechs lend smarter and reduce defaults.</p>
+    </div>
+    <div class="card">
+      <h3>Compliance by Design</h3>
+      <p>Consent tracking, audit logs, and purpose limitation built-in for regulators.</p>
+    </div>
+  </div>
+</section><section>
+  <h2>Who It's For</h2>
+  <div class="grid">
+    <div class="card"><p>Digital lenders & BNPL platforms</p></div>
+    <div class="card"><p>Banks & SACCOs</p></div>
+    <div class="card"><p>Insurtech & embedded finance startups</p></div>
+    <div class="card"><p>Fintech startups launching faster</p></div>
+  </div>
+</section><section id="signup">
+  <h2>Get Early Access</h2>
+  <p>We’re onboarding a small group of fintech partners for our pilot.</p>
+  <form>
+    <input type="text" placeholder="Company Name" required />
+    <input type="email" placeholder="Work Email" required />
+    <input type="text" placeholder="What are you building?" />
+    <button type="submit">Request Access</button>
+  </form>
+</section><footer>
+  <p>© 2025 CredRail. Fintech infrastructure for Africa.</p>
+</footer></body>
+</html>
